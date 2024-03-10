@@ -1,0 +1,80 @@
+:root {
+  --bg-blue: #93B5C9;
+  --gb-wine: #AB2849;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.bg-blue {
+  background-color: var(--bg-blue);
+}
+
+.bg-wine {
+  background-color: var(--gb-wine);
+}
+
+.first-section,
+.second-section,
+.w-full,
+section>div {
+  width: 100%;
+}
+
+.first-section {
+  height: 15%;
+}
+
+.second-section {
+  height: 85%;
+}
+
+.second-section>div:nth-child(1) {
+  height: 30%;
+}
+
+.second-section>div:nth-child(2) {
+  height: 60%;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-section>div:nth-child(3) {
+  height: 10%;
+  padding: 16px 0 4px 0;
+}
+
+div>section {
+  padding-top: 16px;
+  height: 25%;
+  width: 80%;
+  display: flex;
+}
+
+div>section:nth-child(2n) > div:nth-child(2n+1){
+  margin-right: 2px;
+}
+
+div>section:nth-child(2n)>div:nth-child(2n) {
+  margin-left: 2px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-50{
+  width: 50%;
+}
